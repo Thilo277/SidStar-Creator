@@ -122,7 +122,7 @@ namespace SidStarCreator
                     art = "App";
                 }
                 String main;
-                main = $"<{art}_Waypoint ID=\"{i}\">\r\n                <Name>{na}</Name>\r\n                <Type>Normal</Type>\r\n                <Latitude>{la}</Latitude>\r\n                <Longitude>{lo}</Longitude>\r\n                <Speed>0</Speed>\r\n                <Altitude>0</Altitude>\r\n                <AltitudeCons>0</AltitudeCons>\r\n                <AltitudeRestriction>at</AltitudeRestriction>\r\n</{art}_Waypoint>";
+                main = $"\n<{art}_Waypoint ID=\"{i}\">\r\n                <Name>{na}</Name>\r\n                <Type>Normal</Type>\r\n                <Latitude>{la}</Latitude>\r\n                <Longitude>{lo}</Longitude>\r\n                <Speed>0</Speed>\r\n                <Altitude>0</Altitude>\r\n                <AltitudeCons>0</AltitudeCons>\r\n                <AltitudeRestriction>at</AltitudeRestriction>\r\n</{art}_Waypoint>";
                 output.Text += main;
                 i++;
 
