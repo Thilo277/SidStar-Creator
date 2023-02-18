@@ -108,8 +108,21 @@ namespace SidStarCreator
                 String na = splitted[0];
                 String la = splitted[1];
                 String lo = splitted[2];
+                String art = "";
+                if (sidr.IsChecked == true)
+                {
+                    art = "Sid";
+                }
+                else if (starr.IsChecked == true)
+                {
+                    art = "Star";
+                }
+                else if (apprr.IsChecked == true)
+                {
+                    art = "App";
+                }
                 String main;
-                main = $"<Sid_Waypoint ID=\"{i}\">\r\n                <Name>{na}</Name>\r\n                <Type>Normal</Type>\r\n                <Latitude>{la}</Latitude>\r\n                <Longitude>{lo}</Longitude>\r\n                <Speed>0</Speed>\r\n                <Altitude>0</Altitude>\r\n                <AltitudeCons>0</AltitudeCons>\r\n                <AltitudeRestriction>at</AltitudeRestriction>\r\n</Sid_Waypoint>";
+                main = $"<{art}_Waypoint ID=\"{i}\">\r\n                <Name>{na}</Name>\r\n                <Type>Normal</Type>\r\n                <Latitude>{la}</Latitude>\r\n                <Longitude>{lo}</Longitude>\r\n                <Speed>0</Speed>\r\n                <Altitude>0</Altitude>\r\n                <AltitudeCons>0</AltitudeCons>\r\n                <AltitudeRestriction>at</AltitudeRestriction>\r\n</{art}_Waypoint>";
                 output.Text += main;
                 i++;
 
@@ -124,7 +137,12 @@ namespace SidStarCreator
         private void clear_Click(object sender, RoutedEventArgs e)
         {
             output.Clear();
-            i = 0;
+            i = 1;
+        }
+
+        private void clearlist_Click(object sender, RoutedEventArgs e)
+        {
+            list.Items.Clear();
         }
     }
 }

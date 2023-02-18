@@ -5,21 +5,25 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:SidStarCreator"
         mc:Ignorable="d"
-        Title="Sid/Star Creator for FlightGear" Height="450" Width="800" AllowDrop="True">
+        Title="Sid/Star Creator for FlightGear" Height="508" Width="1047" AllowDrop="True" Icon="/sidicon.png">
     <Grid>
-        <Button x:Name="add" Content="Add" Margin="443,61,0,0" VerticalAlignment="Top" Click="add_Click" HorizontalAlignment="Left" Width="26"/>
-        <Button x:Name="remove" Content="Remove" Margin="443,86,0,0" VerticalAlignment="Top" Click="remove_Click" HorizontalAlignment="Left" Width="46"/>
+        <Button x:Name="add" Content="Add" Margin="581,61,0,0" VerticalAlignment="Top" Click="add_Click" HorizontalAlignment="Left" Width="26"/>
+        <Button x:Name="remove" Content="Remove" Margin="581,86,0,0" VerticalAlignment="Top" Click="remove_Click" HorizontalAlignment="Left" Width="46"/>
         <TextBox x:Name="name" Margin="0,63,23,0" TextWrapping="Wrap" VerticalAlignment="Top" HorizontalAlignment="Right" Width="216"/>
         <Label Content="Name" Margin="0,37,197,0" VerticalAlignment="Top" HorizontalAlignment="Right" Width="42"/>
         <TextBox x:Name="lat" Margin="0,112,23,0" TextWrapping="Wrap" VerticalAlignment="Top" HorizontalAlignment="Right" Width="216"/>
         <Label Margin="0,86,186,0" VerticalAlignment="Top" Content="Latitude" HorizontalAlignment="Right" Width="53"/>
         <TextBox x:Name="lon" Margin="0,161,23,0" TextWrapping="Wrap" VerticalAlignment="Top" HorizontalAlignment="Right" Width="216"/>
         <Label Content="Longitude" Margin="0,135,175,0" VerticalAlignment="Top" HorizontalAlignment="Right" Width="64"/>
-        <ListBox x:Name="list" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="292,10,0,10" HorizontalAlignment="Left" Width="146"/>
-        <Button x:Name="load" Content="Load" Margin="443,111,0,0" VerticalAlignment="Top" Click="load_Click" HorizontalAlignment="Left" Width="30"/>
-        <Button x:Name="edit" Content="Edit" Margin="443,136,0,0" VerticalAlignment="Top" Click="edit_Click" HorizontalAlignment="Left" Width="24"/>
-        <TextBox x:Name="output" Margin="10,10,0,35" HorizontalAlignment="Left" Width="277" TextWrapping="Wrap"/>
-        <Button x:Name="goout" Content="Output it!" HorizontalAlignment="Left" Margin="443,161,0,0" VerticalAlignment="Top" Height="56" Click="goout_Click"/>
+        <ListBox x:Name="list" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="416,10,0,35" HorizontalAlignment="Left" Width="146"/>
+        <Button x:Name="load" Content="Load" Margin="581,111,0,0" VerticalAlignment="Top" Click="load_Click" HorizontalAlignment="Left" Width="30"/>
+        <Button x:Name="edit" Content="Edit" Margin="581,136,0,0" VerticalAlignment="Top" Click="edit_Click" HorizontalAlignment="Left" Width="24"/>
+        <TextBox x:Name="output" Margin="10,10,0,35" HorizontalAlignment="Left" Width="401"/>
+        <Button x:Name="goout" Content="Output it!" HorizontalAlignment="Left" Margin="581,161,0,0" VerticalAlignment="Top" Height="56" Click="goout_Click"/>
         <Button x:Name="clear" Content="Clear Output" HorizontalAlignment="Left" Margin="10,0,0,10" Click="clear_Click" Height="20" VerticalAlignment="Bottom"/>
+        <RadioButton x:Name="sidr" Content="SID" HorizontalAlignment="Left" Margin="713,74,0,0" VerticalAlignment="Top" IsChecked="True"/>
+        <RadioButton x:Name="starr" Content="STAR" HorizontalAlignment="Left" Margin="713,91,0,0" VerticalAlignment="Top"/>
+        <RadioButton x:Name="apprr" Content="APPR" HorizontalAlignment="Left" Margin="713,106,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="clearlist" Content="Clear List" HorizontalAlignment="Left" Margin="416,0,0,10" VerticalAlignment="Bottom" Click="clearlist_Click"/>
     </Grid>
 </Window>

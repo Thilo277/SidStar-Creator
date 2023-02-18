@@ -5,6 +5,20 @@
     <TargetFramework>net6.0-windows</TargetFramework>
     <Nullable>enable</Nullable>
     <UseWPF>true</UseWPF>
+    <ApplicationIcon>sidicon.ico</ApplicationIcon>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="sidicon.ico" />
+    <None Remove="sidicon.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="sidicon.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="sidicon.png" />
+  </ItemGroup>
 
 </Project>
