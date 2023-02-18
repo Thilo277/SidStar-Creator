@@ -1,0 +1,25 @@
+﻿<Window x:Class="SidStarCreator.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SidStarCreator"
+        mc:Ignorable="d"
+        Title="Sid/Star Creator for FlightGear" Height="450" Width="800" AllowDrop="True">
+    <Grid>
+        <Button x:Name="add" Content="Add" Margin="443,61,0,0" VerticalAlignment="Top" Click="add_Click" HorizontalAlignment="Left" Width="26"/>
+        <Button x:Name="remove" Content="Remove" Margin="443,86,0,0" VerticalAlignment="Top" Click="remove_Click" HorizontalAlignment="Left" Width="46"/>
+        <TextBox x:Name="name" Margin="0,63,23,0" TextWrapping="Wrap" VerticalAlignment="Top" HorizontalAlignment="Right" Width="216"/>
+        <Label Content="Name" Margin="0,37,197,0" VerticalAlignment="Top" HorizontalAlignment="Right" Width="42"/>
+        <TextBox x:Name="lat" Margin="0,112,23,0" TextWrapping="Wrap" VerticalAlignment="Top" HorizontalAlignment="Right" Width="216"/>
+        <Label Margin="0,86,186,0" VerticalAlignment="Top" Content="Latitude" HorizontalAlignment="Right" Width="53"/>
+        <TextBox x:Name="lon" Margin="0,161,23,0" TextWrapping="Wrap" VerticalAlignment="Top" HorizontalAlignment="Right" Width="216"/>
+        <Label Content="Longitude" Margin="0,135,175,0" VerticalAlignment="Top" HorizontalAlignment="Right" Width="64"/>
+        <ListBox x:Name="list" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="292,10,0,10" HorizontalAlignment="Left" Width="146"/>
+        <Button x:Name="load" Content="Load" Margin="443,111,0,0" VerticalAlignment="Top" Click="load_Click" HorizontalAlignment="Left" Width="30"/>
+        <Button x:Name="edit" Content="Edit" Margin="443,136,0,0" VerticalAlignment="Top" Click="edit_Click" HorizontalAlignment="Left" Width="24"/>
+        <TextBox x:Name="output" Margin="10,10,0,10" HorizontalAlignment="Left" Width="277" TextWrapping="Wrap"/>
+        <Button x:Name="goout" Content="Output it!" HorizontalAlignment="Left" Margin="443,161,0,0" VerticalAlignment="Top" Height="56" Click="goout_Click"/>
+        <Button x:Name="clear" Content="Clear Output" HorizontalAlignment="Left" Margin="443,253,0,0" VerticalAlignment="Top" Click="clear_Click"/>
+    </Grid>
+</Window>
