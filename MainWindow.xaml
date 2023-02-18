@@ -18,8 +18,8 @@
         <ListBox x:Name="list" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="292,10,0,10" HorizontalAlignment="Left" Width="146"/>
         <Button x:Name="load" Content="Load" Margin="443,111,0,0" VerticalAlignment="Top" Click="load_Click" HorizontalAlignment="Left" Width="30"/>
         <Button x:Name="edit" Content="Edit" Margin="443,136,0,0" VerticalAlignment="Top" Click="edit_Click" HorizontalAlignment="Left" Width="24"/>
-        <TextBox x:Name="output" Margin="10,10,0,10" HorizontalAlignment="Left" Width="277" TextWrapping="Wrap"/>
+        <TextBox x:Name="output" Margin="10,10,0,35" HorizontalAlignment="Left" Width="277" TextWrapping="Wrap"/>
         <Button x:Name="goout" Content="Output it!" HorizontalAlignment="Left" Margin="443,161,0,0" VerticalAlignment="Top" Height="56" Click="goout_Click"/>
-        <Button x:Name="clear" Content="Clear Output" HorizontalAlignment="Left" Margin="443,253,0,0" VerticalAlignment="Top" Click="clear_Click"/>
+        <Button x:Name="clear" Content="Clear Output" HorizontalAlignment="Left" Margin="10,0,0,10" Click="clear_Click" Height="20" VerticalAlignment="Bottom"/>
     </Grid>
 </Window>
