@@ -144,5 +144,55 @@ namespace SidStarCreator
         {
             list.Items.Clear();
         }
+
+        private void convertlat_Click(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                String all = converter.Text;
+                String[] alla = all.Split(' ');
+                String[] sseca = alla[2].Split('.');
+                String ssec = sseca[0] + "," + sseca[1];
+                decimal sec = Convert.ToDecimal(ssec);
+                int min = Convert.ToInt32(alla[1]);
+                int deg = Convert.ToInt32(alla[0]);
+
+                decimal con = (((sec / 60) + min) / 60) + deg;
+                con = Math.Round(con, 6);
+                String scon = Convert.ToString(con);
+                String[] scona = scon.Split(",");
+                String sconf = scona[0] + "." + scona[1];
+                lat.Text = sconf;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+            }            
+        }
+
+        private void convertlon_Click(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                String all = converter.Text;
+                String[] alla = all.Split(' ');
+                String[] sseca = alla[2].Split('.');
+                String ssec = sseca[0] + "," + sseca[1];
+                decimal sec = Convert.ToDecimal(ssec);
+                int min = Convert.ToInt32(alla[1]);
+                int deg = Convert.ToInt32(alla[0]);
+
+                decimal con = (((sec / 60) + min) / 60) + deg;
+                con = Math.Round(con, 6);
+                String scon = Convert.ToString(con);
+                String[] scona = scon.Split(",");
+                String sconf = scona[0] + "." + scona[1];
+                lon.Text = sconf;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+            }
+        }
     }
 }

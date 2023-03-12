@@ -12,9 +12,9 @@
         <TextBox x:Name="name" Margin="0,63,23,0" TextWrapping="Wrap" VerticalAlignment="Top" HorizontalAlignment="Right" Width="216"/>
         <Label Content="Name" Margin="0,37,197,0" VerticalAlignment="Top" HorizontalAlignment="Right" Width="42"/>
         <TextBox x:Name="lat" Margin="0,112,23,0" TextWrapping="Wrap" VerticalAlignment="Top" HorizontalAlignment="Right" Width="216"/>
-        <Label Margin="0,86,186,0" VerticalAlignment="Top" Content="Latitude" HorizontalAlignment="Right" Width="53"/>
+        <Label Margin="0,86,149,0" VerticalAlignment="Top" Content="Latitude (52)" HorizontalAlignment="Right" Width="90"/>
         <TextBox x:Name="lon" Margin="0,161,23,0" TextWrapping="Wrap" VerticalAlignment="Top" HorizontalAlignment="Right" Width="216"/>
-        <Label Content="Longitude" Margin="0,135,175,0" VerticalAlignment="Top" HorizontalAlignment="Right" Width="64"/>
+        <Label Content="Longitude (7)" Margin="0,135,149,0" VerticalAlignment="Top" HorizontalAlignment="Right" Width="90"/>
         <ListBox x:Name="list" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="416,10,0,35" HorizontalAlignment="Left" Width="146"/>
         <Button x:Name="load" Content="Load" Margin="581,111,0,0" VerticalAlignment="Top" Click="load_Click" HorizontalAlignment="Left" Width="30"/>
         <Button x:Name="edit" Content="Edit" Margin="581,136,0,0" VerticalAlignment="Top" Click="edit_Click" HorizontalAlignment="Left" Width="24"/>
@@ -25,5 +25,9 @@
         <RadioButton x:Name="starr" Content="STAR" HorizontalAlignment="Left" Margin="713,91,0,0" VerticalAlignment="Top"/>
         <RadioButton x:Name="apprr" Content="APPR" HorizontalAlignment="Left" Margin="713,106,0,0" VerticalAlignment="Top"/>
         <Button x:Name="clearlist" Content="Clear List" HorizontalAlignment="Left" Margin="416,0,0,10" VerticalAlignment="Bottom" Click="clearlist_Click"/>
+        <TextBox x:Name="converter" Margin="713,0,23,20" TextWrapping="Wrap" Height="18" VerticalAlignment="Bottom"/>
+        <Label Content="Convert:" Margin="713,0,0,38" Height="26" VerticalAlignment="Bottom" HorizontalAlignment="Left" Width="54"/>
+        <Button x:Name="convertlat" Content="Convert To Latitude" HorizontalAlignment="Left" Margin="772,0,0,41" VerticalAlignment="Bottom" Click="convertlat_Click"/>
+        <Button x:Name="convertlon" Content="Convert To Longitude" Margin="892,0,0,41" VerticalAlignment="Bottom" HorizontalAlignment="Left" Width="118" Click="convertlon_Click"/>
     </Grid>
 </Window>
