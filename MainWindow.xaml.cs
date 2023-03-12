@@ -163,6 +163,7 @@ namespace SidStarCreator
                 String[] scona = scon.Split(",");
                 String sconf = scona[0] + "." + scona[1];
                 lat.Text = sconf;
+                converter.Text = "";
             }
             catch (Exception ex)
             {
@@ -188,6 +189,7 @@ namespace SidStarCreator
                 String[] scona = scon.Split(",");
                 String sconf = scona[0] + "." + scona[1];
                 lon.Text = sconf;
+                converter.Text = "";
             }
             catch (Exception ex)
             {
